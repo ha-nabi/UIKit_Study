@@ -8,14 +8,8 @@
 import UIKit
 
 class ViewController: UIViewController {
-
-    @IBOutlet weak var nameLabel: UILabel!
-    override func viewDidLoad() {
-        super.viewDidLoad()
-    }
-    @IBAction func didButtonClick(_ sender: Any) {
-        nameLabel.text = "Hi, Chiwoo!"
-        print("Hello")
-    }
+    
+    @IBOutlet weak var button: UIView!
+    @IBOutlet weak var button: UIButton!
 }
 
