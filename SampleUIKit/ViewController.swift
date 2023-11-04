@@ -9,7 +9,5 @@ import UIKit
 
 class ViewController: UIViewController {
     
-    @IBOutlet weak var button: UIView!
-    @IBOutlet weak var button: UIButton!
 }
 
