@@ -24,6 +24,7 @@ class Ex2: UIViewController {
         labels.translatesAutoresizingMaskIntoConstraints = false
         return labels
     }()
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         view.backgroundColor = .systemBackground

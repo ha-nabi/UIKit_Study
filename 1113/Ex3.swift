@@ -30,7 +30,7 @@ class Ex3: UIViewController {
         view.addSubview(newImage)
         newImage.widthAnchor.constraint(equalToConstant: 100).isActive = true
         newImage.heightAnchor.constraint(equalToConstant: 100).isActive = true
-        newImage.topAnchor.constraint(equalTo: view.topAnchor, constant: 45).isActive = true
+        newImage.topAnchor.constraint(equalTo: view.topAnchor, constant: 50).isActive = true
         newImage.centerXAnchor.constraint(equalTo: view.centerXAnchor).isActive = true
         
         view.addSubview(newLabel)

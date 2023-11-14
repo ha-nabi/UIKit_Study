@@ -14,6 +14,7 @@ class Ex4: UIViewController {
         button.setTitle("Tap me", for: .normal)
         button.backgroundColor = .systemBlue
         button.translatesAutoresizingMaskIntoConstraints = false
+        button.layer.cornerRadius = 10
         return button
     }()
 
