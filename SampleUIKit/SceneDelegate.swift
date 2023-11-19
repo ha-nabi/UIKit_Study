@@ -17,9 +17,11 @@ class SceneDelegate: UIResponder, UIWindowSceneDelegate {
                options connectionOptions: UIScene.ConnectionOptions) {
       
       guard let windowScene = (scene as? UIWindowScene) else { return }
+        let vc = MemeberViewController()
+        let navigationController = UINavigationController(rootViewController: vc)
       window = UIWindow(windowScene: windowScene)
 
-      window?.rootViewController = MemeberViewController()
+      window?.rootViewController = navigationController
       window?.makeKeyAndVisible()
     }
 

@@ -20,6 +20,7 @@
 		63C38F492B09DCE500764936 /* MemeberViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 63C38F482B09DCE500764936 /* MemeberViewController.swift */; };
 		63C38F4D2B09E1D000764936 /* Team.swift in Sources */ = {isa = PBXBuildFile; fileRef = 63C38F4C2B09E1D000764936 /* Team.swift */; };
 		63C38F522B09E83E00764936 /* TeamsViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 63C38F512B09E83E00764936 /* TeamsViewModel.swift */; };
+		63C38F552B09EE9000764936 /* TeamTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 63C38F542B09EE9000764936 /* TeamTableViewCell.swift */; };
 		63DB13302AECF1460044274A /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 63DB132F2AECF1460044274A /* AppDelegate.swift */; };
 		63DB13322AECF1460044274A /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 63DB13312AECF1460044274A /* SceneDelegate.swift */; };
 		63DB13342AECF1460044274A /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 63DB13332AECF1460044274A /* ViewController.swift */; };
@@ -42,6 +43,7 @@
 		63C38F482B09DCE500764936 /* MemeberViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MemeberViewController.swift; sourceTree = "<group>"; };
 		63C38F4C2B09E1D000764936 /* Team.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Team.swift; sourceTree = "<group>"; };
 		63C38F512B09E83E00764936 /* TeamsViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TeamsViewModel.swift; sourceTree = "<group>"; };
+		63C38F542B09EE9000764936 /* TeamTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TeamTableViewCell.swift; sourceTree = "<group>"; };
 		63DB132C2AECF1460044274A /* SampleUIKit.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SampleUIKit.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		63DB132F2AECF1460044274A /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		63DB13312AECF1460044274A /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -88,6 +90,7 @@
 		63C38F452B09D9A300764936 /* Introduce Newjins */ = {
 			isa = PBXGroup;
 			children = (
+				63C38F532B09EE6500764936 /* Views */,
 				63C38F502B09E82300764936 /* ViewModel */,
 				63C38F4A2B09E1A700764936 /* Model */,
 				63C38F4B2B09E1B400764936 /* ViewControllers */,
@@ -118,6 +121,14 @@
 				63C38F512B09E83E00764936 /* TeamsViewModel.swift */,
 			);
 			path = ViewModel;
+			sourceTree = "<group>";
+		};
+		63C38F532B09EE6500764936 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				63C38F542B09EE9000764936 /* TeamTableViewCell.swift */,
+			);
+			path = Views;
 			sourceTree = "<group>";
 		};
 		63DB13232AECF1460044274A = {
@@ -240,6 +251,7 @@
 				63C38F4D2B09E1D000764936 /* Team.swift in Sources */,
 				6389C37B2B03BF7E001C156F /* testViewController.swift in Sources */,
 				6389C3682B0206C8001C156F /* Ex1.swift in Sources */,
+				63C38F552B09EE9000764936 /* TeamTableViewCell.swift in Sources */,
 				6389C36A2B020DA3001C156F /* Ex2.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
