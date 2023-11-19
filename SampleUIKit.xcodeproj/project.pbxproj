@@ -16,6 +16,10 @@
 		6389C3772B033AC9001C156F /* Ex01.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6389C3762B033AC9001C156F /* Ex01.swift */; };
 		6389C3792B033BEC001C156F /* Ex02.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6389C3782B033BEC001C156F /* Ex02.swift */; };
 		6389C37B2B03BF7E001C156F /* testViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6389C37A2B03BF7E001C156F /* testViewController.swift */; };
+		63C38F472B09DBB700764936 /* Teams.swift in Sources */ = {isa = PBXBuildFile; fileRef = 63C38F462B09DBB700764936 /* Teams.swift */; };
+		63C38F492B09DCE500764936 /* MemeberViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 63C38F482B09DCE500764936 /* MemeberViewController.swift */; };
+		63C38F4D2B09E1D000764936 /* Team.swift in Sources */ = {isa = PBXBuildFile; fileRef = 63C38F4C2B09E1D000764936 /* Team.swift */; };
+		63C38F522B09E83E00764936 /* TeamsViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 63C38F512B09E83E00764936 /* TeamsViewModel.swift */; };
 		63DB13302AECF1460044274A /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 63DB132F2AECF1460044274A /* AppDelegate.swift */; };
 		63DB13322AECF1460044274A /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 63DB13312AECF1460044274A /* SceneDelegate.swift */; };
 		63DB13342AECF1460044274A /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 63DB13332AECF1460044274A /* ViewController.swift */; };
@@ -34,6 +38,10 @@
 		6389C3762B033AC9001C156F /* Ex01.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Ex01.swift; sourceTree = "<group>"; };
 		6389C3782B033BEC001C156F /* Ex02.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Ex02.swift; sourceTree = "<group>"; };
 		6389C37A2B03BF7E001C156F /* testViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = testViewController.swift; sourceTree = "<group>"; };
+		63C38F462B09DBB700764936 /* Teams.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Teams.swift; sourceTree = "<group>"; };
+		63C38F482B09DCE500764936 /* MemeberViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MemeberViewController.swift; sourceTree = "<group>"; };
+		63C38F4C2B09E1D000764936 /* Team.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Team.swift; sourceTree = "<group>"; };
+		63C38F512B09E83E00764936 /* TeamsViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TeamsViewModel.swift; sourceTree = "<group>"; };
 		63DB132C2AECF1460044274A /* SampleUIKit.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SampleUIKit.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		63DB132F2AECF1460044274A /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		63DB13312AECF1460044274A /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -72,14 +80,50 @@
 			children = (
 				6389C3762B033AC9001C156F /* Ex01.swift */,
 				6389C3782B033BEC001C156F /* Ex02.swift */,
+				6389C37A2B03BF7E001C156F /* testViewController.swift */,
 			);
 			path = 1114;
+			sourceTree = "<group>";
+		};
+		63C38F452B09D9A300764936 /* Introduce Newjins */ = {
+			isa = PBXGroup;
+			children = (
+				63C38F502B09E82300764936 /* ViewModel */,
+				63C38F4A2B09E1A700764936 /* Model */,
+				63C38F4B2B09E1B400764936 /* ViewControllers */,
+			);
+			path = "Introduce Newjins";
+			sourceTree = "<group>";
+		};
+		63C38F4A2B09E1A700764936 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				63C38F4C2B09E1D000764936 /* Team.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		63C38F4B2B09E1B400764936 /* ViewControllers */ = {
+			isa = PBXGroup;
+			children = (
+				63C38F482B09DCE500764936 /* MemeberViewController.swift */,
+				63C38F462B09DBB700764936 /* Teams.swift */,
+			);
+			path = ViewControllers;
+			sourceTree = "<group>";
+		};
+		63C38F502B09E82300764936 /* ViewModel */ = {
+			isa = PBXGroup;
+			children = (
+				63C38F512B09E83E00764936 /* TeamsViewModel.swift */,
+			);
+			path = ViewModel;
 			sourceTree = "<group>";
 		};
 		63DB13232AECF1460044274A = {
 			isa = PBXGroup;
 			children = (
-				6389C37A2B03BF7E001C156F /* testViewController.swift */,
+				63C38F452B09D9A300764936 /* Introduce Newjins */,
 				6389C3752B033AA9001C156F /* 1114 */,
 				6389C3662B0206B8001C156F /* 1113 */,
 				63DB132E2AECF1460044274A /* SampleUIKit */,
@@ -180,6 +224,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				63C38F472B09DBB700764936 /* Teams.swift in Sources */,
 				63EC17322B00E58A008DD933 /* SecondViewController.swift in Sources */,
 				6389C3772B033AC9001C156F /* Ex01.swift in Sources */,
 				63DB13342AECF1460044274A /* ViewController.swift in Sources */,
@@ -187,9 +232,12 @@
 				6389C36C2B0212ED001C156F /* Ex3.swift in Sources */,
 				63DB13322AECF1460044274A /* SceneDelegate.swift in Sources */,
 				6389C3702B021881001C156F /* Ex5.swift in Sources */,
+				63C38F522B09E83E00764936 /* TeamsViewModel.swift in Sources */,
 				6389C3722B023C55001C156F /* ScissorsRockPaper.swift in Sources */,
 				6389C3792B033BEC001C156F /* Ex02.swift in Sources */,
+				63C38F492B09DCE500764936 /* MemeberViewController.swift in Sources */,
 				6389C36E2B021706001C156F /* Ex4.swift in Sources */,
+				63C38F4D2B09E1D000764936 /* Team.swift in Sources */,
 				6389C37B2B03BF7E001C156F /* testViewController.swift in Sources */,
 				6389C3682B0206C8001C156F /* Ex1.swift in Sources */,
 				6389C36A2B020DA3001C156F /* Ex2.swift in Sources */,
