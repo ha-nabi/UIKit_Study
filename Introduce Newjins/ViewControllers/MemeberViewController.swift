@@ -21,6 +21,8 @@ class MemeberViewController: UIViewController {
         return tv
     }()
     
+    private lazy var teamsViewModel = TeamsViewModel()
+    
     override func loadView() {
         super.loadView()
         setup()
@@ -37,7 +39,7 @@ private extension MemeberViewController {
     
     func setup() {
         
-        self.navigationController?.navigationBar.topItem?.title = "뉴진스의 하입보이요"
+        self.navigationController?.navigationBar.topItem?.title = "뉴진스의 하입보이요🐰"
         self.navigationController?.navigationBar.prefersLargeTitles = true
         
         tableVw.dataSource = self
@@ -56,12 +58,14 @@ private extension MemeberViewController {
 
 extension MemeberViewController: UITableViewDataSource {
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-        return 1
+        return teamsViewModel.teams.count
     }
     
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
+        let team = teamsViewModel.teams[indexPath.row]
         let cell = tableVw.dequeueReusableCell(withIdentifier: TeamTableViewCell.cellId, for: indexPath) as! TeamTableViewCell
-        cell.configure()
+        cell.configure(with: team)
         return cell
     }
 }
+
