@@ -21,7 +21,6 @@
 		63C38F4D2B09E1D000764936 /* Team.swift in Sources */ = {isa = PBXBuildFile; fileRef = 63C38F4C2B09E1D000764936 /* Team.swift */; };
 		63C38F522B09E83E00764936 /* TeamsViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 63C38F512B09E83E00764936 /* TeamsViewModel.swift */; };
 		63C38F552B09EE9000764936 /* TeamTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 63C38F542B09EE9000764936 /* TeamTableViewCell.swift */; };
-		63C38F582B0A094D00764936 /* Asset.swift in Sources */ = {isa = PBXBuildFile; fileRef = 63C38F572B0A094D00764936 /* Asset.swift */; };
 		63DB13302AECF1460044274A /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 63DB132F2AECF1460044274A /* AppDelegate.swift */; };
 		63DB13322AECF1460044274A /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 63DB13312AECF1460044274A /* SceneDelegate.swift */; };
 		63DB13342AECF1460044274A /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 63DB13332AECF1460044274A /* ViewController.swift */; };
@@ -45,7 +44,6 @@
 		63C38F4C2B09E1D000764936 /* Team.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Team.swift; sourceTree = "<group>"; };
 		63C38F512B09E83E00764936 /* TeamsViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TeamsViewModel.swift; sourceTree = "<group>"; };
 		63C38F542B09EE9000764936 /* TeamTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TeamTableViewCell.swift; sourceTree = "<group>"; };
-		63C38F572B0A094D00764936 /* Asset.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Asset.swift; sourceTree = "<group>"; };
 		63DB132C2AECF1460044274A /* SampleUIKit.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SampleUIKit.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		63DB132F2AECF1460044274A /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		63DB13312AECF1460044274A /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -96,7 +94,6 @@
 				63C38F502B09E82300764936 /* ViewModel */,
 				63C38F4A2B09E1A700764936 /* Model */,
 				63C38F4B2B09E1B400764936 /* ViewControllers */,
-				63C38F562B0A093400764936 /* Resources */,
 			);
 			path = "Introduce Newjins";
 			sourceTree = "<group>";
@@ -104,6 +101,7 @@
 		63C38F4A2B09E1A700764936 /* Model */ = {
 			isa = PBXGroup;
 			children = (
+				63C38F462B09DBB700764936 /* Teams.swift */,
 				63C38F4C2B09E1D000764936 /* Team.swift */,
 			);
 			path = Model;
@@ -131,15 +129,6 @@
 				63C38F542B09EE9000764936 /* TeamTableViewCell.swift */,
 			);
 			path = Views;
-			sourceTree = "<group>";
-		};
-		63C38F562B0A093400764936 /* Resources */ = {
-			isa = PBXGroup;
-			children = (
-				63C38F462B09DBB700764936 /* Teams.swift */,
-				63C38F572B0A094D00764936 /* Asset.swift */,
-			);
-			path = Resources;
 			sourceTree = "<group>";
 		};
 		63DB13232AECF1460044274A = {
@@ -251,7 +240,6 @@
 				6389C3772B033AC9001C156F /* Ex01.swift in Sources */,
 				63DB13342AECF1460044274A /* ViewController.swift in Sources */,
 				63DB13302AECF1460044274A /* AppDelegate.swift in Sources */,
-				63C38F582B0A094D00764936 /* Asset.swift in Sources */,
 				6389C36C2B0212ED001C156F /* Ex3.swift in Sources */,
 				63DB13322AECF1460044274A /* SceneDelegate.swift in Sources */,
 				6389C3702B021881001C156F /* Ex5.swift in Sources */,

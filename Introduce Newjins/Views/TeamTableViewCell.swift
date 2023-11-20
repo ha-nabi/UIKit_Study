@@ -14,6 +14,11 @@ class TeamTableViewCell: UITableViewCell {
     private lazy var containerVw: UIView = {
         let vw = UIView()
         vw.translatesAutoresizingMaskIntoConstraints = false
+        vw.layer.shadowOffset = CGSize(width: 5, height: 5)
+        vw.layer.shadowOpacity = 0.7
+        vw.layer.shadowRadius = 5
+        vw.layer.shadowColor = UIColor.gray.cgColor
+        vw.layer.opacity = 0.9
         return vw
     }()
     
@@ -29,7 +34,7 @@ class TeamTableViewCell: UITableViewCell {
         let imgVw = UIImageView()
         imgVw.translatesAutoresizingMaskIntoConstraints = false
         imgVw.contentMode = .scaleAspectFit
-        imgVw.layer.cornerRadius = 25
+        imgVw.layer.cornerRadius = 30
         imgVw.clipsToBounds = true
         return imgVw
     }()
@@ -105,7 +110,7 @@ class TeamTableViewCell: UITableViewCell {
         containerVw.backgroundColor = item.id.propile
         
         propileImgvW.image = item.id.picture
-        playbackBtn.setImage(item.isPlaying ? Assets.pause : Assets.play, for: .normal)
+        playbackBtn.setImage(UIImage(systemName: "paperplane"), for: .normal)
         
         nameLbl.text = item.name
         ageLbl.text = "나이 : \(item.age)"
@@ -128,13 +133,13 @@ class TeamTableViewCell: UITableViewCell {
         contentStackVw.addArrangedSubview(infoLbl)
         
         NSLayoutConstraint.activate([
-            containerVw.topAnchor.constraint(equalTo: self.contentView.topAnchor, constant: 8),
-            containerVw.bottomAnchor.constraint(equalTo: self.contentView.bottomAnchor, constant: -8),
-            containerVw.leadingAnchor.constraint(equalTo: self.contentView.leadingAnchor, constant: 8),
-            containerVw.trailingAnchor.constraint(equalTo: self.contentView.trailingAnchor, constant: -8),
+            containerVw.topAnchor.constraint(equalTo: self.contentView.topAnchor, constant: 16),
+            containerVw.bottomAnchor.constraint(equalTo: self.contentView.bottomAnchor, constant: -16),
+            containerVw.leadingAnchor.constraint(equalTo: self.contentView.leadingAnchor, constant: 16),
+            containerVw.trailingAnchor.constraint(equalTo: self.contentView.trailingAnchor, constant: -16),
             
-            propileImgvW.heightAnchor.constraint(equalToConstant: 50),
-            propileImgvW.widthAnchor.constraint(equalToConstant: 50),
+            propileImgvW.heightAnchor.constraint(equalToConstant: 60),
+            propileImgvW.widthAnchor.constraint(equalToConstant: 60),
             propileImgvW.topAnchor.constraint(equalTo: contentStackVw.topAnchor),
             propileImgvW.leadingAnchor.constraint(equalTo: containerVw.leadingAnchor, constant: 8),
             

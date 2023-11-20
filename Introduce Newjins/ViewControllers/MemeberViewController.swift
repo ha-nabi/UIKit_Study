@@ -39,7 +39,7 @@ private extension MemeberViewController {
     
     func setup() {
         
-        self.navigationController?.navigationBar.topItem?.title = "뉴진스의 하입보이요🐰"
+        self.navigationController?.navigationBar.topItem?.title = "Member"
         self.navigationController?.navigationBar.prefersLargeTitles = true
         
         tableVw.dataSource = self

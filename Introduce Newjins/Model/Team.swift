@@ -15,6 +15,5 @@ struct Team {
     let info: String
     let age: Int
     let founded: String
-    var isPlaying: Bool = false
     
 }
