@@ -57,4 +57,32 @@ class ViewController: UIViewController,
         }
         
     }
+    
+    func imagePickerController(_ picker: UIImagePickerController, didFinishPickingMediaWithInfo info: [UIImagePickerController.InfoKey: Any]) {
+        
+        let mediaType = info[.mediaType] as! NSString
+        
+        self.dismiss(animated: true, completion: nil)
+        
+        if mediaType.isEqual(to: UTType.image.identifier) {
+            let image = info[.originalImage] as! UIImage
+            
+            imageView.image = image
+            
+            if (newMedia == true) {
+                UIImageWriteToSavedPhotosAlbum(image, self, #selector(ViewController.image(image:didFinishSavingWithError:contextinfo:)), nil)
+            }
+        }
+    }
+    
+    // 오류가 발생하면 경고 상자를 통해 사용자에게 보고
+    @objc func image(image: UIImage, didFinishSavingWithError error: NSErrorPointer, contextinfo: UnsafeRawPointer) {
+        if error != nil {
+            print("error")
+        }
+    }
+    
+    func imagePickerControllerDidCancel(_ picker: UIImagePickerController) {
+        self.dismiss(animated: true, completion: nil)
+    }
 }
